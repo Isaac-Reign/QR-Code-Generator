@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code Generator</title>
+    <link rel="stylesheet" href="./sass/styles.css">
+    <script defer src="./scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="max-width">
+                <div class="text-x">Free QR code Generator</div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="nav-container">
+                <div>
+                    <a href="#" id="save-section" class="menu" style="background: #032;">Data-Base</a>
+                    <a href="" class="menu">Login</a>
+                </div>
+                <a href="https://isaac-portfolio.onrender.com" id="menu-section" target="_blank" rel="noopener no-referrer" class="menu">About developer</a>
+            </div>
+        </nav>
+
+        <main>
+            <form id="generated">
+                <div class="image-box"><img src="./loading.gif" class="w1" alt="inline-loading">
+                    <div id="qrcode"></div>
+                </div>
+            </form>
+
+            <form action="" class="generate-form">
+                <div class="card">
+                    <div style="margin-right: 13px;">
+                        <label for="url">Enter url:</label>
+                        <input id="url" type="url" placeholder="Enter or Past url..." required>
+                    </div>
+                    <div class="select">
+                        <label for="size">Select width & height:</label>
+                        <select name="" id="size">
+                        <option value="100">100X100 x-small</option>
+                        <option value="200">200X200 small</option>
+                        <option value="300" selected>300X300 Normal</option>
+                        <option value="400">400X400 x-Normal</option>
+                        <option value="500">500X500 Large</option>
+                        <option value="600">600X600 x-Large</option>
+                        <option value="700">700X700 xx-Large</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <button type="submit">Generate</button>
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </main>
+
+
+        <div class="show-case">
+            <div class="image-container">
+                <img src="./QR-vvld-150.webp" alt="">
+            </div>
+            <div class="article">
+                <p>QR code allows smart phone to access your website easily.</p>
+                <p>Enter or past in the URL, click on <span>Generate</span> when you are done.</p>
+                <p>It will generate the QR code image, you can decide to download the image by clicking on the <span>download</span> button.</p>
+                <p>You can also click on <span>Add to data-base</span>, this will save the image to the data-base, you can view them by clicking on the <span>Data-Base</span> button above,you can decide to download, delete or edit it latter. But to do this
+                    you have to <span>login</span> if you have account or <span>register</span>if you don't</p>
+                <p>The Width and Height will affect when you download it on your device.</p>
+            </div>
+        </div>
+
+
+    </div>
+    <section class="user-section">
+        <div class="actions">
+            <b class="saved">1 saved</b>
+            <b class="close-btn">&times;</b>
+        </div>
+
+
+        <div class="wrapper">
+            <li>Login to view all that you have save, thise is how it will be display.</li>
+            <li>You can save as much as you want.</li>
+            <li>The Width and Height will affect when you download it on your device</li>
+            <div class="action">
+                <li><a href="" style="color: #fff">Login now</a></li>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <li id=""><img src="./QR-vvld-150.webp" alt=""></li>
+            <div class="border">
+                <li>Name: Google Documents</li>
+                <li>Source: https://www.google.com/...</li>
+                <li>Width & Height: 300X300</li>
+                <li>27th Dec 2022</li>
+            </div>
+
+            <div class="action-btn">
+                <li><a href="" class="download-btn2">Download</a></li>
+                <li><a href="" class="edit">Edit</a></li>
+                <li><a href="" class="delete">Delete</a></li>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <li id=""><img src="./QR-vvld-150.webp" alt=""></li>
+            <div class="border">
+                <li>Name: Google Documents</li>
+                <li>Source: https://www.google.com/...</li>
+                <li>Width & Height: 300X300</li>
+                <li>27th Dec 2022</li>
+            </div>
+
+            <div class="action-btn">
+                <li><a href="" class="download-btn2">Download</a></li>
+                <li><a href="" class="edit">Edit</a></li>
+                <li><a href="" class="delete">Delete</a></li>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container">
+        <section class="comment-section">
+            <h2>Comments Section</h2>
+
+            <div class="comment-form">
+                <form action="">
+                    <textarea name="" id="" placeholder="Type comment here..."></textarea>
+                    <div class="comment-btn">
+                        <button type="submit">Submit comment</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="display-comments">
+                <div>
+                    <b class="user"><img src="./anonymous-user.jpg" alt=""> Isaac Reigns</b>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis saepe non sequi totam dolores tempora consequatur, possimus earum ipsa nulla?</p>
+                        <div><a href="">Reply</a></div>
+                    </div>
+                    <div class="time">17th May, 2022</div>
+                </div>
+                <div class="comment-reply">
+                    <b class="user"><img src="./anonymous-user.jpg" alt=""> Isaac Reigns</b>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis saepe non sequi totam dolores tempora consequatur, possimus earum ipsa nulla?</p>
+                        <div><a href="">Reply</a></div>
+                    </div>
+                    <div class="time">17th May, 2022</div>
+                </div>
+            </div>
+            <div class="display-comments">
+                <div>
+                    <b class="user"><img src="./anonymous-user.jpg" alt=""> Isaac Reigns</b>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis saepe non sequi totam dolores tempora consequatur, possimus earum ipsa nulla?</p>
+                        <div><a href="">Reply</a></div>
+                    </div>
+                    <div class="time">17th May, 2022</div>
+                </div>
+            </div>
+            <div class="display-comments">
+                <div>
+                    <b class="user"><img src="./anonymous-user.jpg" alt=""> Isaac Reigns</b>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis saepe non sequi totam dolores tempora consequatur, possimus earum ipsa nulla?</p>
+                        <div><a href="">Reply</a></div>
+                    </div>
+                    <div class="time">17th May, 2022</div>
+                </div>
+            </div>
+            <div class="more-comments">
+                <h2><a href="">All Comments</a></h2>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            <h2>Let Explore The World</h2>
+            <h2><a href="https://isaac-portfolio.onrender.com" target="_blank" rel='noopener no-referrer'> My portforlio website</a></h2>
+            <div>@ Copy right 2022, All right reserver.</div>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
